@@ -1,0 +1,419 @@
+body{
+	background: grey;
+}
+
+#abrir_regras{
+	position:fixed;
+	border: 2px solid black;
+	border-radius: 10%;
+	text-align: center;
+	vertical-align: middle;
+	width: 100px;
+	height: 30px;
+	left:12%;
+	background-color: white;
+	text-align: center;
+	font-size: x-large;
+	padding: 1%;
+}
+
+.tabuleiro_fora{
+	position: fixed;
+	left: 50%;
+	margin-left: -216px;
+	visibility: hidden;
+	height: 432px;
+	width: 432px;
+	border-radius: 14px;
+	border: 6px solid black;
+	background: rgb(0, 0, 0);
+   
+  }
+
+#h1{
+	visibility: hidden;
+	text-align: center;
+	font-size: 70px;
+	color:white;
+}
+
+#titulo{
+	/*position: sticky;*/
+	visibility: hidden;
+	top: 50px;
+	background-color: #6E6E6E;
+	width: 300px;
+	margin: auto;
+	font-family:sans-serif;;
+}
+
+.login_background, .login_background_2player{
+	background-color: white;
+	border-radius: 20%;
+	width: 400px;
+	height: 280px;
+	border: 5px solid black;
+	margin-top: -5%;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin:auto;
+}
+
+.login_background_2player{
+	visibility: hidden;
+	margin-left:5%;
+	float: left;
+}
+
+.login_background{
+	margin-right: 5%;
+	float: right;
+}
+
+#botao_login, #botao_login2{ 
+	cursor: pointer;
+	font-size: 20px;
+}
+
+#fname, #fname2{
+	font-size: 20px;
+}
+#gameroom{
+	font-size: 15px;
+}
+#senha1, #senha2{
+	font-size: 20px;
+}
+
+#regras{
+	visibility: hidden;
+
+	position: fixed;
+	left: 50%;
+	top: 5%;
+	margin-left: -350px;
+  	z-index: 99999;
+	
+	font-size: 40px;
+	text-align: center;
+	padding-right: 1%;
+	padding-left: 1%;
+
+	background-color: white;
+	width: 700px;
+	height: 710px;
+
+	border: 6px solid rgb(3, 53, 25);
+	border-radius: 60px;
+	overflow: auto;	
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0; 
+	
+}
+
+#sair_regras, #sair_ranking{
+	width: 10%;
+	height: 7%;
+
+	position: relative;
+	top: 90px;
+	left: 10%;
+	float: left;
+
+	color: rgb(3, 53, 25);
+	background-color: white;
+	border-style: dashed;
+	border-radius: 50%;
+}
+
+#sair_ranking{
+	top: 25px;
+}
+
+#sair_regras:focus{
+	border-radius: 0%;
+}
+
+#titulo_regras{
+	font-size: 70px;
+}
+
+#texto_regras{
+	font-size: xx-large;
+	
+}
+
+.configuracao{
+	position: fixed;
+	left: 50%;
+	top: 5%;
+	margin-left: -350px;
+  	padding-top: 10px;
+  	z-index: 9999;
+	
+	font-size: 40px;
+	text-align: center;
+
+	background-color: white;
+	width: 700px;
+	height: 700px;
+
+	border: 6px solid rgb(3, 53, 25);
+	border-radius: 60px;
+}
+
+#titulo_config{
+	font-size: 80px;
+	color: rgb(255, 255, 255);
+	background-color: #8f7b7b;
+	width: 45%;
+	text-align: center;
+	margin: auto;
+	border-radius: 50%;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+.adversario{
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.botao_config{
+	position: relative;
+	width: 150px;
+	height: 70px;
+	border-radius: 20px;
+
+	background-color: black;
+	color: white;
+
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.start{
+	margin-top: 20px;
+   background-color: darkgreen;
+   cursor: pointer;
+}
+
+.buttons_options_background{
+	position: absolute;
+	margin-left: 10%;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+	background-color: rgb(81, 97, 84);
+	border-radius: 50px;
+	box-shadow: 3px 7px;
+	border: 6px solid black;
+	display: none;	
+  }
+  
+  .button{
+	cursor: pointer;
+	border-radius: 40px;
+	position: relative;
+	font-size:25px;
+}
+
+#rage_quit{
+	display: block;
+	top:  15%;
+	left: 25%; 
+  padding: 15px 35px;
+  background-color: rgb(81, 97, 84);
+  border: solid black 2px;
+  border-top-left-radius: 10px;
+}
+
+#skip{
+  border-top-left-radius: 10px;
+	display: block;
+	padding: 15px 35px;
+	right: 25%;
+  top:  -15%;
+  background-color: rgb(81, 97, 84);
+  border: solid black 2px;
+}
+
+#game_state{
+	position: fixed;
+	right: 0px;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 300px;
+	background-color: rgb(81, 97, 84);
+	border-radius: 50px;
+	box-shadow: 3px 4px;
+	border: 4px solid black; 
+
+	padding-left: 20px;
+	line-height: 3;
+	text-align: left;
+	font-size: 30px;
+	margin-top: 100px;
+	margin-right: 350px;
+	display: none;
+
+}
+
+#pointsOfPlayerTwo {
+	border: 2px solid black;
+	top: 120px;
+	right: 25%;
+	visibility: visible;
+	position: absolute;
+	width: 140px;
+	padding: 20px;
+	height: 50px;
+	background-color: #fef9ff;
+	right: 25%;
+	border-radius: 10px;
+	z-index: 70;
+	border-radius: 50px;
+	box-shadow: 2px 5px; 
+	font-size: 20px; 
+	line-height: normal;
+	display: none;
+  }
+  
+  #pointsOfPlayerOne {
+	border: 2px solid white;
+	top: 120px;
+	left: 77%;
+	visibility: hidden;
+	position: absolute;
+	width: 140px;
+	padding: 20px;
+	height: 50px;
+	background-color: #000000;
+	right: 80px;
+	border-radius: 10px;
+	z-index: 70;
+	border-radius: 50px;
+	box-shadow: 2px 5px;
+	font-size: 20px; 
+	line-height: normal;
+	
+  }
+
+  .player_branco{
+	color: black;
+  background-color: white;
+}
+
+.player_preto{
+	color: white;
+  background-color: black;
+}
+
+#player1, #player2 {
+	display: block;
+	width: 110px;
+	overflow: hidden;
+  }
+
+  #ranking{
+	visibility: hidden;
+	overflow: hidden;
+
+	position: fixed;
+	left: 50%;
+	top: 5%;
+	margin-left: -350px;
+  	padding-top: 10px;
+  	z-index: 9999;
+	
+	font-size: 40px;
+	text-align: center;
+
+	background-color: white;
+	width: 700px;
+	height: 700px;
+
+	border: 6px solid rgb(3, 53, 25);
+	border-radius: 60px;
+  }
+
+  #titulo_ranking{
+	font-size: 80px;
+	color: rgb(255, 255, 255);
+	background-color: #8f7b7b;
+	width: 55%;
+	text-align: center;
+	margin: auto;
+	border-radius: 50%;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+  #alert, #alert_desistiu{
+	overflow: hidden;
+	visibility: hidden;
+	text-align: center;
+	font-size: 150%;
+	position: fixed;
+	padding: 1%;
+	z-index: 99999999;
+	width: 20%;
+	height: 10%;
+	background-color: white;
+	left: 50%;
+	margin-left: -11%;
+	top: 30%;
+	border: 5px solid black;
+	border-radius: 10%;
+}
+
+#creators{
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	
+	text-align: right;
+	z-index: 999999999999999999;
+}
+
+#creators:hover{
+	color: red;
+}
+
+/* id = disclayer
+   id = blackbackground 
+   id = username/username2
+   id = peca branca/preto
+   é do js 
+*/
+
+
+
+
+/*
+.celula{
+	display: table-cell;
+	border: 2px solid black;
+	height: 50px;
+	width: 50px;
+	float: left;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+.peca{
+	display: inline-block;
+	border-radius: 50px;
+	width: 30px;
+	height: 30px;
+}
+*/
+

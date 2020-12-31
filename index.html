@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Othello</title>
+</head>
+
+<body>
+  <script src="othellojs.js"></script>
+  <script src="pedidos.js"></script>
+  <div id="abrir_regras" class="abrir_regras">Regras</div>
+
+  <div id="camada_peca"></div>
+  <div id="fundoTabuleiro" class="tabuleiro_fora"></div>
+
+  <div id="titulo">
+    <h1 id="h1"> Othello </h1>
+  </div>
+
+  <div class="login_background" id="login_background">
+    <div id="username1">
+      <form>
+        <label id="login">Username of Player1:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label>Password:</label><br>
+        <input type="password" id="senha1" name="senha"><br>
+        <label id="gameroom">Room Number:</label><br>
+        <input type="number" id="gameroom1" name="gameroom1" value="45"><br>
+        <input type="button" value="Submeter" id="botao_login">
+      </form>
+    </div>
+  </div>
+
+  <div class="login_background_2player" id="login_background2">
+    <div id="username2">
+      <form>
+        <label id="login2">Username of Player2:</label><br>
+        <input type="text" id="fname2" name="fname2"><br>
+        <label>Password:</label><br>
+        <input type="password" id="senha2" name="senha"><br>
+        <input type="button" value="Submeter" id="botao_login2">
+      </form>
+    </div>
+  </div>
+  <div id="regras">
+    <button id="sair_regras">Sair</button>
+    <p id="titulo_regras"> Regras</p>
+    <p id="texto_regras">
+      Na posição inicial há 4 peças 2 de cada uma das 2 tonalidades claro e escuro colocadas nas
+      casas centrais.
+      Peças da mesma tonalidade começam na diagonal. <br>
+      As peças escuras jogam primeiro.<br>
+      Durante o jogo os jogadores jogam alternadamente
+      colocando uma peça da sua cor numa casa livre.
+      Se na mesma linha, coluna ou diagonal da peça jogada peças da cor contrária viram para a cor do jogador.<br>
+      Só pode ser jogada uma peça se for virada alguma do adversário.<br>
+      A peça colocada pode virar várias peças do adversário que estão na mesma linha coluna ou diagonal da peça
+      jogada,desde que num dos extremos esteja a peça jogada
+      e no outro esteja uma peça do mesmo tom.<br>
+      Podem ser viradas várias peças consecutivas do adversário,na mesma linha, coluna ou diagonal.<br>
+      Na sua vez, o jogador só pode jogar se virar peças,
+      caso contrário não poderá jogar e terá de passar a jogada.<br>
+      Jogo termina quando nenhum jogador pode jogar. <br>
+      Ganha o jogador com maior número de peças.
+
+    </p>
+  </div>
+  <div id="configuracao" class="configuracao">
+    <div id="titulo_config">Othello</div>
+
+    <div>
+      <div class="adversario">
+        Adversário
+      </div>
+      <button id="vs_player" class="botao_config">
+        VS Player
+      </button>
+      <button id="vs_pc" class="botao_config">
+        VS PC
+      </button>
+    </div>
+
+    <div>
+      <div class="adversario">
+        Cor
+      </div>
+      <button id="peca_preta" class="botao_config">
+        Preto
+      </button>
+      <button id="peca_branca" class="botao_config">
+        Branco
+      </button>
+    </div>
+
+    <div>
+      <!-- O Ai não têm dificuldades disponiveis -->
+      <div class="adversario">
+        Dificuldade
+      </div>
+      <button class="botao_config">
+        Facil
+      </button>
+      <button class="botao_config">
+        Normal
+      </button>
+      <button class="botao_config">
+        Dificil
+      </button>
+    </div>
+
+    <button id="start" class="botao_config start">
+      Start
+    </button>
+
+  </div>
+  <div id="button_options" class='buttons_options_background'>
+    <button id='rage_quit' class="button"> Desistir do jogo</button>
+    <button id="skip" class='button'> Passar a jogada </button>
+  </div>
+
+  <div id='game_state'></div>
+
+  <div id="pointsOfPlayerTwo" class="player_branco">
+    <span id="player2">Jogador 2</span>
+  </div>
+  <div id="pointsOfPlayerOne" class="player_preto">
+    <span id="player1">Jogador 1</span>
+  </div>
+
+  <div id="ranking">
+    <button id="sair_ranking">Sair</button>
+    <div id="titulo_ranking">Ranking</div>
+    <div id="texto_ranking"></div>
+  </div>
+
+  <div id="alert"></div>
+  <div id="alert_desistiu"></div>
+  <footer id="creators">
+    By João Gonçalves (201850137) e Paulo Araújo (201805060)
+
+  </footer>
+</body>
+
+</html>
