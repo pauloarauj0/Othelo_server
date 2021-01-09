@@ -52,7 +52,7 @@ const server = http.createServer(function (request, response) {
                                     let user = reg.getReg(nick);
                                     if (!user.verifyPassword(pass)) {
                                         response.writeHead(200, conf.headers.txt);
-                                        mensagem = JSON.stringify("Ta feito mpt");
+                                        mensagem = JSON.stringify("Registo ja existia");
                                     }
                                     else {
                                         response.writeHead(401, conf.headers.json);
